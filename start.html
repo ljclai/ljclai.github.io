@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Hotdog Clicker</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script src="1.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body onload="pageSetup()">
+		<div class="header">
+			<h1 class="title">Hotdog Clicker <br><center>v2.0</center></h1>
+			<div class="save_box">
+				<h3><span id="local_storage_support"></span></h3>
+				<a href="#" onclick="loadSave()">Load previoius save</a><br>
+				<a href="#" onclick="saveGame()">Save</a><br>
+				<a href="#" onclick="deleteSave()">Delete your save</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="resources">
+				<table cellpadding="5px">
+					<tr>
+						<td><p>You have <span id="sausages">0</span> sausages</p></td>
+						<td><p>You have <span id="buns">0</span> buns</p></td>
+						<td><p>You have <span id="sauces">0</span> lots of sauce</p></td>
+						<td><p>You have <span id="hotdogs">0</span> hotdogs</p></td>
+					</tr>
+					<tr>
+						<td><a href="#" onclick="getSausages()">Get <span id="sausage_click_amount">1</span> sausages</a></td>
+						<td><a href="#" onclick="getBuns()">Get <span id="bun_click_amount">1</span> buns</a></td>
+						<td><a href="#" onclick="getSauces()">Get <span id="sauce_click_amount">1</span> lots of sauce</a></td>
+						<td><a href="#" onclick="getHotdog()">Assemble <span id="hotdog_click_amount">1</span> hotdog</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="buildings">
+				<table cellpadding="5px">
+					<tr>
+						<td><p>You have <span id="butchers">0</span> butchers</p></td>
+						<td><p>You have <span id="bakeries">0</span> bakeries</p></td>
+						<td><p>You have <span id="sauceries">0</span> sauceries</p></td>
+						<td><p>You have <span id="hotdog_stands">0</span> hotdog stands</p></td>
+					</tr>
+					<tr>
+						<td><a href="#" onclick="getButcher()">Get a Butcher for $<span id="butcher_cost"></span></a></td>
+						<td><a href="#" onclick="getBakery()">Get a Bakery for $<span id="bakery_cost"></span></a></td>
+						<td><a href="#" onclick="getSaucery()">Get a Saucery for $<span id="saucery_cost"></span></a></td>
+						<td><a href="#" onclick="getHotdogStand()">Get a Hotdog Stand for $<span id="hotdog_stand_cost"></span></a></td>
+					</tr>
+					<tr>
+						<td><p>You have <span id="">0</span> meat factories</p></td>
+						<td><p>You have <span id="">0</span> bread baking machines</p></td>
+						<td><p>You have <span id="">0</span> sauce vats</p></td>
+						<td><p>You have <span id="">0</span> robotic arms</p></td>
+					</tr>
+					<tr>
+						<td><a href="#" onclick="">Get a  for $<span id=""></span></a></td>
+						<td><a href="#" onclick="">Get a  for $<span id=""></span></a></td>
+						<td><a href="#" onclick="">Get a  for $<span id=""></span></a></td>
+						<td><a href="#" onclick="">Get a  for $<span id=""></span></a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="triangle">
+			</div>
+			<div class="line">
+			</div>
+			<div class="domination">
+				<table>
+					<tr>
+						<td><p>You have <span id="customers">0</span> customers</p></td>
+					</tr>
+					<tr>
+						<td><p>You have $<span id="money">0</span> cash</p></td>
+					</tr>
+				</table>
+			</div>
+			<div class="upgrades">
+				
+			</div>
+		</div>
+	</body>
+</html>
